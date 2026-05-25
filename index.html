@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriAnalytics - Nutrition Intelligence Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/landing.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-landing">
+        <div class="container-fluid px-4 px-md-5">
+            <a class="navbar-brand" href="#home">
+                <span class="brand-logo">
+                    <i class="fas fa-leaf"></i>
+                </span>
+                <span class="brand-text">NutriAnalytics</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#why">Why Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nutrition">Nutrition</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-3">
+                        <a class="btn btn-primary btn-sm" href="/login">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container-fluid px-4 px-md-5">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Intelligent Nutrition <span class="text-gradient">Analysis</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Discover the power of data-driven nutrition insights. Analyze, compare, and optimize your diet with our comprehensive nutrition analytics platform.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="/login" class="btn btn-primary btn-lg btn-primary-custom">
+                                <i class="fas fa-rocket"></i> Get Started
+                            </a>
+                            <a href="#features" class="btn btn-outline-primary btn-lg btn-outline-custom">
+                                <i class="fas fa-play-circle"></i> Learn More
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <h3>183+</h3>
+                                <p>Foods Analyzed</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>3,062+</h3>
+                                <p>Nutrient Values</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>20+</h3>
+                                <p>Nutrient Types</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="hero-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container-fluid px-4 px-md-5">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Powerful Features</h2>
+                <p class="section-subtitle">Everything you need to understand nutrition</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Comprehensive Database</h3>
+                        <p>Access an extensive database of 183+ foods with complete nutritional breakdowns including proteins, carbohydrates, fats, vitamins, minerals, and amino acids.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Advanced Search</h3>
+                        <p>Filter and search foods by nutritional content, food group, and specific nutrients. Find the perfect foods to meet your dietary goals effortlessly.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Visual Analytics</h3>
+                        <p>Beautiful charts and visualizations help you understand nutritional patterns. Compare foods and analyze nutrient distributions at a glance.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Secure Access</h3>
+                        <p>Enterprise-grade security with role-based access control. Your data is protected with industry-standard encryption and authentication protocols.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Access NutriAnalytics from any device. Our platform is fully responsive and optimized for desktop, tablet, and mobile devices.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Multi-Role System</h3>
+                        <p>Support for multiple user roles including administrators, nutritionists, managers, and editors. Collaborate and manage permissions easily.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us" id="why">
+        <div class="container-fluid px-4 px-md-5">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6">
+                    <div class="why-image">
+                        <div class="image-placeholder-secondary">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="why-content">
+                        <h2 class="section-title mb-4">Why Choose NutriAnalytics?</h2>
+                        <div class="why-item">
+                            <div class="why-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="why-text">
+                                <h4>Data-Driven Decisions</h4>
+                                <p>Make informed nutritional decisions based on comprehensive, accurate data from our extensive food database.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="why-text">
+                                <h4>Easy to Use</h4>
+                                <p>Intuitive interface designed for both professionals and individuals. No technical expertise required.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="why-text">
+                                <h4>Continuous Updates</h4>
+                                <p>Our database is regularly updated with new foods and nutritional research to keep you informed.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="why-text">
+                                <h4>Expert Support</h4>
+                                <p>Our team of nutrition experts ensures data accuracy and provides support when you need it.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition Education Section -->
+    <section class="nutrition-education" id="nutrition">
+        <div class="container-fluid px-4 px-md-5">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Nutrition Matters</h2>
+                <p class="section-subtitle">Understanding the fundamentals of healthy nutrition</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="nutrition-card">
+                        <div class="nutrition-icon">
+                            <i class="fas fa-apple-alt"></i>
+                        </div>
+                        <h3>Macronutrients</h3>
+                        <p>Carbohydrates, proteins, and fats are the three macronutrients essential for energy production, cell growth, and body functions. A balanced diet includes appropriate proportions of all three.</p>
+                        <ul class="nutrition-list">
+                            <li><strong>Proteins:</strong> Build and repair tissues</li>
+                            <li><strong>Carbohydrates:</strong> Provide energy</li>
+                            <li><strong>Fats:</strong> Support hormone production</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="nutrition-card">
+                        <div class="nutrition-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>Micronutrients</h3>
+                        <p>Vitamins and minerals are vital micronutrients that support immune function, bone health, and numerous metabolic processes. They're essential in small quantities but crucial for overall health.</p>
+                        <ul class="nutrition-list">
+                            <li><strong>Vitamins:</strong> Support immunity and energy</li>
+                            <li><strong>Minerals:</strong> Build bones and teeth</li>
+                            <li><strong>Antioxidants:</strong> Protect cells</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="nutrition-card">
+                        <div class="nutrition-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3>Caloric Balance</h3>
+                        <p>Understanding your caloric needs is fundamental to maintaining a healthy weight and achieving nutritional goals. Different activities and body compositions require different caloric intake.</p>
+                        <ul class="nutrition-list">
+                            <li><strong>Basal Metabolic Rate:</strong> Calories at rest</li>
+                            <li><strong>Activity Level:</strong> Additional calorie needs</li>
+                            <li><strong>Goals:</strong> Maintenance, loss, or gain</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="nutrition-card">
+                        <div class="nutrition-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h3>Balanced Diet</h3>
+                        <p>A balanced diet includes a variety of foods from all food groups in appropriate proportions. This ensures you get all necessary nutrients while maintaining overall health and wellness.</p>
+                        <ul class="nutrition-list">
+                            <li><strong>Fruits & Vegetables:</strong> 5+ servings daily</li>
+                            <li><strong>Whole Grains:</strong> At least half your grains</li>
+                            <li><strong>Protein:</strong> Varied sources recommended</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container-fluid px-4 px-md-5">
+            <div class="cta-content text-center">
+                <h2>Ready to Transform Your Nutrition Strategy?</h2>
+                <p>Start your nutrition analysis journey today with NutriAnalytics</p>
+                <a href="/login" class="btn btn-light btn-lg">
+                    <i class="fas fa-arrow-right"></i> Access the Platform
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-fluid px-4 px-md-5">
+            <div class="row gy-4 mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-section">
+                        <h5 class="footer-title">About NutriAnalytics</h5>
+                        <p>Your trusted platform for comprehensive nutrition analysis and food data intelligence.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-section">
+                        <h5 class="footer-title">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#why">Why Us</a></li>
+                            <li><a href="#nutrition">Nutrition</a></li>
+                            <li><a href="/login">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-section">
+                        <h5 class="footer-title">Support</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">System Status</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-section">
+                        <h5 class="footer-title">Legal</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NutriAnalytics. All rights reserved. | Powered by intelligent nutrition data science</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/config.js?v=8.0"></script>
+    <script src="/static/js/landing.js?v=5.0"></script>
+</body>
+</html>

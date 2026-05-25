@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /manager/
+
+    # Don't rewrite if the request is for an actual file or directory
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Rewrite requests to .html files (extensionless URLs)
+    RewriteRule ^([a-zA-Z0-9_-]+)/?$ $1.html [QSA,L]
+
+    # Handle query strings for plan-workspace
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html [QSA,L]
+</IfModule>
