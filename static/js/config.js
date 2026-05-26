@@ -9,6 +9,22 @@
  * To change settings, edit this file instead of modifying individual files
  */
 
+// Detect environment and set backend URL
+const getBackendUrl = () => {
+    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    
+    if (isLocalhost) {
+        return 'http://localhost:8000';
+    } else {
+        // For production (e.g., Render), assume backend is on a separate service
+        // Replace 'app-name' with your actual frontend service name on Render
+        const frontendHost = window.location.hostname;
+        const backendHost = frontendHost.replace(/^[^.]+/, 'nutrition-backend'); // nutrition-app -> nutrition-backend
+        const protocol = window.location.protocol;
+        return `${protocol}//${backendHost}`;
+    }
+};
+
 const CONFIG = {
     // ============ BACKEND CONFIGURATION ============
     BACKEND: {
@@ -18,7 +34,7 @@ const CONFIG = {
         
         // Computed properties - DO NOT EDIT
         get BASE_URL() {
-            return `${this.PROTOCOL}://${this.HOST}:${this.PORT}`;
+            return getBackendUrl();
         },
         
         get API_URL() {
