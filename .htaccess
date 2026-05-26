@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Don't rewrite if the request is for an actual file or directory
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Don't rewrite if it's going into a subfolder (admin, manager, nutritionist, static, etc.)
+    RewriteCond %{REQUEST_URI} !/admin [OR]
+    RewriteCond %{REQUEST_URI} !/manager [OR]
+    RewriteCond %{REQUEST_URI} !/nutritionist [OR]
+    RewriteCond %{REQUEST_URI} !/static
+
+    # Rewrite requests to .html files in root (extensionless URLs)
+    RewriteRule ^([a-zA-Z0-9_-]+)/?$ $1.html [QSA,L]
+
+    # Handle query strings
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html [QSA,L]
+</IfModule>
